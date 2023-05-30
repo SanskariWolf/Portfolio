@@ -17,10 +17,8 @@ document.getElementById('contactForm').addEventListener('submit', function(event
     // Display confirmation message
     var confirmation = document.createElement('p');
     confirmation.textContent = 'Your message has been sent. Thank you!';
+    confirmation.style.color = '#f1c40f';
     document.getElementById('contactForm').appendChild(confirmation);
 
     // Reset form fields
-    document.getElementById('name').value = '';
-    document.getElementById('email').value = '';
-    document.getElementById('message').value = '';
-});
+    document.getElementById

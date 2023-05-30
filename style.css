@@ -2,10 +2,11 @@
 
 /* General Styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f5f5f5;
+    background-color: #000;
+    color: #fff;
 }
 
 .container {
@@ -16,14 +17,17 @@ body {
 
 /* Header */
 header {
-    background-color: #333;
-    color: #fff;
+    background-color: #000;
     padding: 20px;
+    text-align: center;
 }
 
 .logo {
-    font-size: 24px;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 36px;
     margin: 0;
+    color: #fff;
+    text-transform: uppercase;
 }
 
 .nav-links {
@@ -55,34 +59,35 @@ header {
 }
 
 h1, h2, h3 {
-    color: #333;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: normal;
+    color: #fff;
     margin-bottom: 20px;
 }
 
 p {
-    color: #555;
+    color: #fff;
     line-height: 1.6;
     margin-bottom: 20px;
 }
 
 /* Home Section */
 #home {
-    background-color: #f1c40f;
-    color: #fff;
+    background-image: linear-gradient(to right, #000, #f1c40f);
 }
 
 /* About Section */
 #about {
-    background-color: #fff;
+    background-color: #000;
 }
 
 /* Projects Section */
 #projects {
-    background-color: #f9f9f9;
+    background-color: #000;
 }
 
 .project {
-    background-color: #fff;
+    background-color: #222;
     border-radius: 5px;
     padding: 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -90,10 +95,13 @@ p {
     text-align: left;
 }
 
+.project h3 {
+    color: #f1c40f;
+}
+
 /* Contact Section */
 #contact {
-    background-color: #f1c40f;
-    color: #fff;
+    background-image: linear-gradient(to right, #000, #f1c40f);
 }
 
 form label {
@@ -113,8 +121,8 @@ form textarea {
 }
 
 form button {
-    background-color: #333;
-    color: #fff;
+    background-color: #f1c40f;
+    color: #000;
     padding: 10px 20px;
     border: none;
     cursor: pointer;
@@ -122,12 +130,12 @@ form button {
 }
 
 form button:hover {
-    background-color: #555;
+    background-color: #f39c12;
 }
 
 /* Footer */
 footer {
-    background-color: #333;
+    background-color: #000;
     color: #fff;
     padding: 20px;
     text-align: center;

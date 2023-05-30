@@ -56,6 +56,14 @@ header {
 .section {
     padding: 50px 0;
     text-align: center;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.section.show {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 h1, h2, h3 {
@@ -63,17 +71,46 @@ h1, h2, h3 {
     font-weight: normal;
     color: #fff;
     margin-bottom: 20px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+h1.show, h2.show, h3.show {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 p {
     color: #fff;
     line-height: 1.6;
     margin-bottom: 20px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+p.show {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 /* Home Section */
 #home {
     background-image: linear-gradient(to right, #000, #f1c40f);
+    animation: gradientAnimation 10s ease infinite;
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
 }
 
 /* About Section */
@@ -93,6 +130,14 @@ p {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
     text-align: left;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.project.show {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .project h3 {
@@ -109,6 +154,14 @@ form label {
     margin-bottom: 5px;
     color: #fff;
     text-align: left;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+form label.show {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 form input,
@@ -118,6 +171,15 @@ form textarea {
     margin-bottom: 10px;
     border-radius: 5px;
     border: none;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+form input.show,
+form textarea.show {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 form button {
@@ -127,6 +189,14 @@ form button {
     border: none;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+form button.show {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 form button:hover {
@@ -139,6 +209,14 @@ footer {
     color: #fff;
     padding: 20px;
     text-align: center;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+footer.show {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 footer p {
